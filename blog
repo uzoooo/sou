@@ -1,0 +1,89 @@
+---
+layout: redirected
+sitemap: false
+permalink: /2019/09/10/googleappsscript-beginner-study/
+title: Google Apps Scrip入門　少しの工夫で業務時短！
+description: 初学者向けのGoogle Apps Script入門ブログになります。初学者の方で少し工夫することで、１つ１つの業務時間を短縮することが可能です。ぜひご参考ください！
+redirect_to:  /contents/study/2019_blog _googleappsscript_seminar_for_beginners/
+---
+
+<!-- ---
+layout: post
+image: "https://hommachi-open-source-lab.github.io/img/blog/20190127_1.JPG"
+title: Google Apps Scrip入門　少しの工夫で業務時短！
+description: 初学者向けのGoogle Apps Script入門ブログになります。初学者の方で少し工夫することで、１つ１つの業務時間を短縮することが可能です。ぜひご参考ください！
+permalink: /2019/09/10/googleappsscript-beginner-study/
+---
+
+![ Google Apps Scrip入門　少しの工夫で業務時短！
+]({{ site.baseurl }}/img/blog/20190127_3.JPG "2019年1月27日大阪開催！Python入門セミナー")
+
+## 概要
+
+～世にあふれるコードは使えない～
+今やインターネットが発達し、Google Apps Scriptも類に漏れずコードは溢れております。
+ただ、そのまま使えることは実はそう多くありません。
+例として、まず多くのコードは単体では成り立ちません。
+また、インターネット上の情報が古いために、Google側での仕様変更によりシステムが正常に作動しないということもあります。
+ただし、ちょっとした努力で、経費が削減ができるのもまた事実です。
+スプレッドシート（Google Apps Script）を活用することで時間を創り、「時間」をより有効活用できるように、利用シーンを想定しながら、コードを紹介していきます。
+最終的には、顧客データベースを作り、顧客管理・スケジュール管理までできるようにしていきます。
+
+## Google Apps Scriptの特徴
+
+さて、早速初回の内容ですが、まずはGoogle Apps Scriptの特徴からお話ししていきます。
+
+特徴① Googleの関連サービスと連携できる
+
+<img src=”/Blog/1.png”>
+
+Googleのサービスは、ここに掲載されているだけでも13種類あります。有名なものとしては、Gmail、Google Calender、Googlemapがありますね。
+実はこれらすべて連携が可能なんです。
+
+特徴②完全無料の開発用エディタが利用できる
+初心者の場合はプログラミングをするための開発環境をセットする段階で挫折する人が少なくありませんが、GASの場合はブラウザ上ですぐに利用できる専用の開発環境が用意されています。
+
+<img src=”/Blog/2.png”>
+
+特徴➂自分でサーバーを用意する必要がない
+
+通常なら自分でサーバーを契約して環境を整えるのですが、GASの場合は高機能なGoogleのサーバー環境を利用可能です。
+GASで開発したWebアプリをそのままGoogleのサーバーを介して世界中に公開することもでき、全機能すべて無料で利用できます！
+
+【最大の特徴】プログラムの自動化を簡単に行える
+
+通常はPCで作成したプログラムはパソコンの電源をOFFにすると実行できません。
+ところが、GASの場合はプログラムがGoogleのサーバー上に保管されているのでいつでも実行することができます。
+例えば…
+・毎朝8時にチーム全員へ特定のメールを配信する
+
+なんてことも可能になります！
+
+## 初回のコーディング -関数を作ってみよう-
+
+Google Apps Scriptでは、コードはすべて関数の形で定義します。
+簡単な関数（関数名：my function）を定義してみましょう。
+
+<pre>
+<code>
+function myFunction () {
+ 　Logger.log(“Hello Google Apps Script!”);
+}
+</code>
+</pre>
+
+さて、ここで、実際のエディタ画面を確認してみましょう。
+<img src=”/Blog/4.png”>
+
+さらに、左上の再生ボタンを押すと…
+（再生ボタンを押すと、関数が実行されます）
+
+<img src=”/Blog/3.png”>
+
+ログ画面上に、「Hello Google Apps Script!」と表示されていますね。
+これで関数（myFunction）がきちんと実行されたということが確認できました。
+
+## 次回更新予定
+2019年9月16日
+内容は、「Google Apps Scriptを使ってメールを送信する」を予定しております！
+
